@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; worker-src 'none'">
+  <title>Offline Base64</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+<main>
+  <header>
+    <div><p class="eyebrow">LOCAL TOOL</p><h1>Base64</h1></div>
+    <a href="popup.html" target="_blank" rel="noopener">Open in a tab ↗</a>
+  </header>
+  <p class="intro">Encode or decode on your computer. Nothing is sent or saved.</p>
+  <div class="label-row"><label for="input">Input</label><span id="input-count">0 bytes</span></div>
+  <textarea id="input" spellcheck="false" autocomplete="off" autocapitalize="off" aria-describedby="text-limit" placeholder="Paste text or Base64 here…"></textarea>
+  <p id="text-limit" class="limit">Up to 32,000 characters per box.</p>
+  <div class="toolbar">
+    <button id="encode" class="primary">Encode</button>
+    <button id="decode" class="primary">Decode</button>
+    <button id="open-file">Open text file</button>
+    <button id="clear">Clear</button>
+    <input id="file" type="file" hidden>
+  </div>
+  <label class="option"><input id="url-safe" type="checkbox"> URL-safe output when encoding (no padding)</label>
+  <div class="label-row"><label for="output">Result</label><span id="output-count">0 bytes</span></div>
+  <textarea id="output" readonly spellcheck="false" placeholder="Your result appears here…"></textarea>
+  <div class="toolbar">
+    <button id="copy" disabled>Copy result</button>
+    <button id="reverse" disabled title="Reverse the character order of the result">Reverse result</button>
+    <button id="swap" disabled>Use as input ↑</button>
+    <button id="download" disabled>Download result</button>
+  </div>
+  <p id="status" role="status" aria-live="polite">Ready. Supports UTF-8 text, emoji, and URL-safe Base64.</p>
+  <footer>No website access · No analytics · No stored history</footer>
+</main>
+</body>
+</html>
