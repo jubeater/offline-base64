@@ -12,8 +12,11 @@ RELEASE = Path(__file__).resolve().parent
 EXTENSION = RELEASE.parent
 ASSETS = RELEASE / "assets"
 ICONS = EXTENSION / "icons"
+DOCS = EXTENSION / "docs"
 ASSETS.mkdir(exist_ok=True)
 ICONS.mkdir(exist_ok=True)
+DOCS.mkdir(exist_ok=True)
+(DOCS / "privacy-policy.html").write_bytes((RELEASE / "privacy-policy.html").read_bytes())
 
 
 def font(size, mono=False):

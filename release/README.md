@@ -9,7 +9,8 @@ Public support email: **zhangtianlin15@gmail.com**
 - Runtime source and icon PNGs: the repository root (`../`).
 - Upload package: `offline-base64-1.0.1.zip` (manifest at ZIP root).
 - Detailed listing, privacy fields, and reviewer instructions: `store-listing.md`.
-- Standalone privacy policy ready to host publicly: `privacy-policy.html`.
+- Privacy policy: `privacy-policy.html`, published through GitHub Pages at
+  https://jubeater.github.io/offline-base64/privacy-policy.html.
 - Small promotional image: `assets/promo-440x280.png`.
 - Asset-generation source: `build.py`.
 - Automated conversion/package checks: `test.cjs`.
@@ -24,10 +25,10 @@ Public support email: **zhangtianlin15@gmail.com**
    Use **jubeater** as the public display name. Supply accurate legal/payment
    details separately wherever Google requests them, and determine your own
    trader/non-trader declaration.
-2. Host `privacy-policy.html` at a publicly readable URL. A public GitHub Pages
-   page, your existing site, or a public GitHub gist of the policy can work. Do
-   not submit a local file path as the store's privacy-policy URL. Publishing
-   this policy discloses the chosen public support email.
+2. Open https://jubeater.github.io/offline-base64/privacy-policy.html and use that
+   public URL in the store's privacy-policy field. GitHub Pages serves `/docs`
+   from `main`. Edit `release/privacy-policy.html`, run the builder to copy it
+   into `docs/`, and push both files when updating the policy.
 3. Review the actual 1280x800 Chrome screenshots in `assets/`. To refresh them,
    run `bash capture-screenshots.sh` outside a restricted shell, or load the
    extension manually, open it in a tab, and capture 1280x800 or 640x400 images.

@@ -75,4 +75,8 @@ available from [GitHub Releases](https://github.com/jubeater/offline-base64/rele
 The `release/` directory contains store listing text, screenshots, the privacy
 policy, browser validation notes, and a screenshot helper. See
 [publication materials](release/README.md) and the
-[privacy policy](release/privacy-policy.html).
+[privacy policy](https://jubeater.github.io/offline-base64/privacy-policy.html).
+
+The policy is hosted on GitHub Pages from `main` → `/docs`. Edit
+`release/privacy-policy.html`, run `python3 release/build.py` to refresh the
+published copy in `docs/`, and commit and push both files to update it.

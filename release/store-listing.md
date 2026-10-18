@@ -68,7 +68,7 @@ user-triggered file, copy, and download controls.
 - Limited-use certifications: Review and complete Google's required declarations
   truthfully. The extension does not sell data, use it for unrelated purposes,
   or use it to determine creditworthiness or lending eligibility.
-- Privacy policy URL: **Pending public hosting of privacy-policy.html.**
+- Privacy policy URL: https://jubeater.github.io/offline-base64/privacy-policy.html
 
 ## Review/test instructions
 
