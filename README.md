@@ -3,7 +3,16 @@
 A small Manifest V3 extension for encoding/decoding Base64 in the browser.
 No build tools or dependencies are required.
 
+## Install from the Chrome Web Store
+
+Offline Base64 is available on the
+[Chrome Web Store](https://chromewebstore.google.com/detail/offline-base64/damodkebibkgpfahonoempphfhekgdfo).
+Click **Add to Chrome**, then pin **Offline Base64** in Chrome's Extensions menu.
+Chrome keeps store installs up to date automatically.
+
 ## Install locally
+
+To run it from source instead:
 
 1. Open `chrome://extensions`.
 2. Enable **Developer mode**.
@@ -45,7 +54,7 @@ Chrome itself and other installed extensions have their own independent network
 behavior. This extension does not control those.
 
 Source files are `manifest.json`, `popup.html`, `popup.css`, and `popup.js`.
-You can inspect all of them before loading. There is no updater in this package.
+You can inspect all of them before loading. The unpacked package has no updater; Chrome updates only store installs.
 
 Chrome's official unpacked-extension instructions:
 https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked
